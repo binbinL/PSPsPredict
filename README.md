@@ -4,7 +4,7 @@
 PSPsPredict is a tool for predicting the probability of liquid-liquid phase separation of proteins.
 ## info
 
-Considering the size of the video memory, the data generation script needs to be executed in advance.
+Considering the size of the video memory, the data generation script needs to be executed in advance maybe.
 
 Execute embedding.py script, generate proteins embedding.
 
@@ -23,5 +23,5 @@ python Predict.py -i data/demo.csv -src .../emddata/ -o .../data/demo_res.csv
 ```
 
 - -i: A path to a csv-formatted file containing name and protein sequence.
-- -src: ProtT5 embedding directory
+- -src: A directory contain ProtT5 embeddings.
 - -o: A path to a csv-formatted file containing name and result.
