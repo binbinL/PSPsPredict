@@ -82,8 +82,6 @@ def predict(src,src_root,tgt):
     df.to_csv(tgt, index=False)
     print('Done!')
 
-
-
 device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
 model = MyModel(d_embedding,d_model,dropout,n_class,vocab_size,nlayers,nhead,dim_feedforward,kmers)
 state_dict = torch.load('/data/lwb/WorkSpace/PSPs_Predict/model/best-0.901.pth')
@@ -114,8 +112,5 @@ def main():
     predict(args.input_file, args.ProtT5_directory, args.outfile)
 
 if __name__ == '__main__':
-    # src = '/data/lwb/WorkSpace/PSPs/Net/data/test.csv'
-    # src_root = '...' # .npz files folder
-    # tgt = '/data/lwb/WorkSpace/PSPs/Net/data/test_res.csv'
     main()
 
