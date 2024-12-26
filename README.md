@@ -2,7 +2,8 @@
 
 ## Introduction
 PSPsPredict is a tool for predicting the probability of liquid-liquid phase separation of proteins.
-## info
+We use the two-model fusion of the large language model ProtT5 and the KmerConv module to train and predict the protein sequence.
+## Usage
 
 Considering the size of the video memory, the data generation script needs to be executed in advance maybe.
 
