@@ -9,7 +9,7 @@ Considering the size of the video memory, the data generation script needs to be
 Execute embedding.py script, generate proteins embedding.
 
 ```python
-python embedding.py -i '.../data/xxx.csv' -o '.../emddata/' --model '.../prot_t5_xl_half_uniref50-enc'
+python embedding.py -i .../data/xxx.csv -o .../emddata/ --model .../prot_t5_xl_half_uniref50-enc
 ```
 
 - -i: A path to a csv-formatted file containing name and protein sequence.
@@ -19,7 +19,7 @@ python embedding.py -i '.../data/xxx.csv' -o '.../emddata/' --model '.../prot_t5
 Execute Predict.py script, Predict the result.
 
 ```python
-python Predict.py -i 'data/demo.csv' -src '.../emddata/' -o '.../data/demo_res.csv'
+python Predict.py -i data/demo.csv -src .../emddata/ -o .../data/demo_res.csv
 ```
 
 - -i: A path to a csv-formatted file containing name and protein sequence.
